@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi página de prueba</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        h1 {
+            color: red;
+        }
+        h6 {
+            padding-left: 20px;
+        }
+        p {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        nombre = document.getElementById('nombre');
+        nombre.addEventListener("click", function() {
+            alert("Bienvenidoa mi sitio web");
+        });
+
+        description = document.getElementById('description');
+        description.addEventListener("mouseenter", function() {
+            description.style.color = "black";
+            description.style.backgroundColor = "white";
+        });
+        description.addEventListener("mouseout", function() {
+            description.style.color = "white";
+            description.style.backgroundColor = "black";
+        });
+    </script>
+  </head>
+  <body>
+      <h1 id="nombre">Mariana Tapia</h1>
+      <h6 id="fecha_nacimiento">09/10/1980</h6>
+      <p id="descripcion">Me llamo Mariana y vivo en villa nueva</p>
+  </body>
+</html>
